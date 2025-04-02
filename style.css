@@ -1,6 +1,6 @@
 div{
-    display: flex;
-    flex-direction: column;
+    display: block;
+   
     background-color: rgba(64, 122, 52, 0.45);
     height: 90vh;
 }
