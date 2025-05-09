@@ -3,19 +3,55 @@
         <title>Democracy and Conflict: Mapping Civil Unrest in Africa</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" />
-
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     </head>
     <body>
-        <div id="Home">
-           <p>The first page</p> 
-        </div>
-        <div id="About">
-            <h1>About the project page</h1>
-            <P>This project presents the civil unrest and conflicts in Africa according to ACLED database. </P>
-        </div>
-        <div id="Map">
-            <p>Map showing African countries where you click on the country and get the information on 
-                what is happening there</p>
-        </div>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#title">Home</a></li>
+                    <li><a href="#continent">Overview</a></li>
+                    <li><a href="#bigmap">Map</a></li>
+                  </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="title">
+                <h1>Democracy and Conflict:</h1>
+                <h2>Mapping Civil Unrest in Africa</h2>
+            </section>
+            <section id="continent">
+                <div class="img"></div>
+                <div class="content">
+                    <h2>Africa: An Overview</h2>
+                    <P>Africa is a continent with a rich and diverse history, marked by both achievements and challenges in terms of 
+                        democracy. Over the past few decades, many African nations have made significant strides toward democratization,
+                         with multiparty elections, greater political freedoms, and improved governance structures. Countries like South 
+                         Africa, Ghana, and Botswana have seen stable democratic transitions and have become models for democratic 
+                         governance on the continent. However, democracy in Africa remains uneven, as some countries still face 
+                         challenges such as authoritarianism, limited political freedom, and irregular elections. Despite these 
+                         struggles, there is a growing civil society and a greater push for accountability and transparency in 
+                         governance.
+                        </p><br>
+                        <p>
+                        At the same time, Africa continues to face several conflicts that hinder its political and economic progress. 
+                        Armed conflicts, often driven by ethnic tensions, political instability, and competition for resources, persist 
+                        in regions such as the Sahel, the Horn of Africa, and Central Africa. Civil wars, insurgencies, and terrorism, 
+                        such as those in Sudan, Nigeria, and the Democratic Republic of Congo, continue to destabilize many parts of the 
+                        continent. While efforts by African institutions like the African Union and regional organizations strive to 
+                        mediate peace and security, the continent still struggles with challenges related to governance, corruption, 
+                        and external influences that exacerbate conflicts. In this context, the path to lasting peace and democratic 
+                        consolidation remains complex and requires sustained efforts both domestically and internationally.</P>
+                </div>
+            </section>
+            <section id="bigmap">
+                <div id="map"></div>
+            </section>
+        </main>
+        <script src="javascript.js"></script>
+        <footer>
+            <p>the footer</p>
+        </footer>
     </body>
 </html>

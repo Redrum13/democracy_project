@@ -1,6 +1,73 @@
-div{
-    display: block;
-   
-    background-color: rgba(64, 122, 52, 0.45);
-    height: 90vh;
+html, body{
+    margin: 0px;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+
+}
+section{
+    display: flex;
+    height: 100vh;
+    background-color: rgba(50, 51, 50, 0.45);
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    position: fixed; 
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;  /* Remove the default list style */
+    display: flex;  /* This makes the <ul> display its items in a row */
+}
+  
+nav li {
+    margin-right: 20px;  /* Space between list items (optional) */
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black, 0 0 20px black;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: inherit;
+
+}
+
+p{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    font-size: 80px;
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black, 0 0 20px black;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2{
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black, 0 0 20px black;
+    font-size: 40px;
+}
+
+#title{
+    flex-direction: column; 
+    background-image: url("Housing_Protest_-_Cape_Town_High_Court_-_2012_-_17.jpg");
+}
+
+#map {
+    height: 90vh; /* or 100% if its container has height */
+    width: 100vw;
+}
+
+.img{
+    width: 45vw;
+    height: 100vh;
+    background-image: url("Africa_(orthographic_projection).svg");
+}
+.content{
+    width: 55vw;
+    padding: 10px;
 }
