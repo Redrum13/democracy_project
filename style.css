@@ -1,73 +1,112 @@
-html, body{
-    margin: 0px;
-    padding: 0px;
-    color: rgb(255, 255, 255);
-
-}
-section{
-    display: flex;
-    height: 100vh;
-    background-color: rgba(50, 51, 50, 0.45);
-    justify-content: center;
-    align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav{
-    display: flex;
-    position: fixed; 
+body, html {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
 }
 
-nav ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;  /* Remove the default list style */
-    display: flex;  /* This makes the <ul> display its items in a row */
-}
-  
-nav li {
-    margin-right: 20px;  /* Space between list items (optional) */
-    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black, 0 0 20px black;
-}
-
-a{
-    text-decoration: none;
-    font-size: 20px;
-    color: inherit;
-
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 2s ease;
+  padding: 2rem;
+  text-align: center;
 }
 
-p{
-    margin: 0px;
-    padding: 0px;
-}
-h1{
-    font-size: 80px;
-    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black, 0 0 20px black;
-    margin: 0px;
-    padding: 0px;
+.slide.active {
+  opacity: 1;
+  z-index: 1;
 }
 
-h2{
-    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black, 0 0 20px black;
-    font-size: 40px;
+.content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+  max-width: 700px;
 }
 
-#title{
-    flex-direction: column; 
-    background-image: url("Housing_Protest_-_Cape_Town_High_Court_-_2012_-_17.jpg");
+.menu {
+  margin-top: 2rem;
+}
+
+.menu button {
+  background: #f1c40f;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#slide1 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/06/Protest_against_the_Special_Anti-Robbery_Squad_%28SARS%29_in_Lagos%2C_Nigeria.jpg');
+}
+
+#slide2 {
+  background-color: #000; /* fallback */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ed/Africa_%28satellite_image%29.jpg');
+}
+
+#slide3 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/76/Map_showing_European_colonial_territories_in_Africa.png');
+}
+
+#slide4 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/da/END_SARS_PROTEST_in_Lagos%2C_Nigeria.jpg');
+}
+
+#slide5 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a0/Lazarus_Chakwera_addresses_election_protesters_%282019%29.jpg');
 }
 
 #map {
-    height: 90vh; /* or 100% if its container has height */
-    width: 100vw;
+  width: 100%;
+  height: 400px;
+  margin-top: 1rem;
+  border: 2px solid white;
+  border-radius: 8px;
 }
 
-.img{
-    width: 45vw;
-    height: 100vh;
-    background-image: url("Africa_(orthographic_projection).svg");
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
 }
-.content{
-    width: 55vw;
-    padding: 10px;
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #f1c40f;
 }

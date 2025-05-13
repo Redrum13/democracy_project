@@ -1,57 +1,67 @@
-<html>
-    <head>
-        <title>Democracy and Conflict: Mapping Civil Unrest in Africa</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#title">Home</a></li>
-                    <li><a href="#continent">Overview</a></li>
-                    <li><a href="#bigmap">Map</a></li>
-                  </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="title">
-                <h1>Democracy and Conflict:</h1>
-                <h2>Mapping Civil Unrest in Africa</h2>
-            </section>
-            <section id="continent">
-                <div class="img"></div>
-                <div class="content">
-                    <h2>Africa: An Overview</h2>
-                    <P>Africa is a continent with a rich and diverse history, marked by both achievements and challenges in terms of 
-                        democracy. Over the past few decades, many African nations have made significant strides toward democratization,
-                         with multiparty elections, greater political freedoms, and improved governance structures. Countries like South 
-                         Africa, Ghana, and Botswana have seen stable democratic transitions and have become models for democratic 
-                         governance on the continent. However, democracy in Africa remains uneven, as some countries still face 
-                         challenges such as authoritarianism, limited political freedom, and irregular elections. Despite these 
-                         struggles, there is a growing civil society and a greater push for accountability and transparency in 
-                         governance.
-                        </p><br>
-                        <p>
-                        At the same time, Africa continues to face several conflicts that hinder its political and economic progress. 
-                        Armed conflicts, often driven by ethnic tensions, political instability, and competition for resources, persist 
-                        in regions such as the Sahel, the Horn of Africa, and Central Africa. Civil wars, insurgencies, and terrorism, 
-                        such as those in Sudan, Nigeria, and the Democratic Republic of Congo, continue to destabilize many parts of the 
-                        continent. While efforts by African institutions like the African Union and regional organizations strive to 
-                        mediate peace and security, the continent still struggles with challenges related to governance, corruption, 
-                        and external influences that exacerbate conflicts. In this context, the path to lasting peace and democratic 
-                        consolidation remains complex and requires sustained efforts both domestically and internationally.</P>
-                </div>
-            </section>
-            <section id="bigmap">
-                <div id="map"></div>
-            </section>
-        </main>
-        <script src="javascript.js"></script>
-        <footer>
-            <p>the footer</p>
-        </footer>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Civil Unrest in Africa</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+
+  <!-- Slide 1: Start Screen with Menu -->
+  <!-- Slide 1: Start Screen with Navigation -->
+<div class="slide active" id="slide1">
+  <nav class="navbar">
+    <ul>
+      <li><a href="#" onclick="goToSlide(0)">Home</a></li>
+      <li><a href="#" onclick="goToSlide(1)">Map</a></li>
+      <li><a href="#" onclick="goToSlide(2)">History</a></li>
+      <li><a href="#" onclick="goToSlide(3)">Movements</a></li>
+      <li><a href="#" onclick="goToSlide(4)">Hope</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <h1>Civil Unrest in Africa</h1>
+    <p>Explore the roots, realities, and resistance shaping democratic struggle across the continent.</p>
+  </div>
+</div>
+
+
+  <!-- Slide 2: With Map -->
+  <div class="slide" id="slide2">
+    <div class="content">
+      <h2>Where is the unrest?</h2>
+      <p>This map highlights recent hotspots of civil unrest related to political repression, economic hardship, and demands for democratic reform.</p>
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="slide" id="slide3">
+    <div class="content">
+      <h2>Colonial Legacy</h2>
+      <p>From arbitrary borders to exploitative systems, colonial rule planted seeds of instability that still shape Africa's democratic path.</p>
+    </div>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="slide" id="slide4">
+    <div class="content">
+      <h2>Modern Movements</h2>
+      <p>Movements like #EndSARS in Nigeria and #ShutItAllDown in Namibia reflect ongoing youth-led resistance to state violence and corruption.</p>
+    </div>
+  </div>
+
+  <!-- Slide 5 -->
+  <div class="slide" id="slide5">
+    <div class="content">
+      <h2>Hope and Resilience</h2>
+      <p>Despite obstacles, African communities show resilience through grassroots organizing, elections, and calls for accountability.</p>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
